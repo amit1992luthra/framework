@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application name="GS1">
+   
+<Page name="LoginPage">
+   <Locator name ="username" Type ="XPath" Value ="//input[@name='username']"/>
+   <Locator name ="password" Type ="Name" Value ="password"/>
+   <Locator name ="submit" Type ="XPath" Value ="//*[@type='submit']"/>"
+   <Locator name ="logout" Type ="XPath" Value ="//a[contains(@href,'logout')]"/>"
+   <Locator name ="vCard" Type ="XPath" Value ="//span[contains(text(),'$Val$')]"/>
+   <Locator name ="btnGeneric" Type ="XPath" Value ="//button[contains(text(),'$Val$')]"/>
+   <Locator name ="tabGeneric" Type ="XPath" Value ="//span[contains(text(),'$Val$')]"/>
+   <Locator name ="optionCountry" Type ="XPath" Value ="//span[text()='$Val$']"/>
+   <Locator name ="selectUOM" Type ="XPath" Value ="//select"/>
+   <Locator name ="labelGTIN" Type ="XPath" Value ="//label[contains(text(),'GTIN')]//following-sibling::p"/>
+   <Locator name ="downloadBarcodePDF" Type ="XPath" Value ="//b[text()='PDF format']//parent::span//parent::div//parent::div//img"/>
+   <Locator name ="netContent" Type ="XPath" Value ="(//b[contains(text(),'Net content')]//parent::b//parent::span//parent::div//following-sibling::div//input)[1]"/>
+   <Locator name ="productCategory" Type ="XPath" Value ="//input[@type='search']"/>
+   <Locator name ="inputTextGeneric" Type ="XPath" Value ="//b[contains(text(),'$Val$')]//parent::b//parent::span//parent::div//parent::div//following-sibling::div//input"/>
+ </Page>
+ 
+<Page name="GenericControls">
+   <Locator name ="username" Type ="XPath" Value ="//input[@name='username']"/>
+   <Locator name ="password" Type ="Name" Value ="password"/>
+   <Locator name ="submit" Type ="XPath" Value ="//*[@type='submit']"/>"
+   <Locator name ="vCard" Type ="XPath" Value ="//span[contains(text(),'$Val$')]"/>
+   <Locator name ="btnGeneric" Type ="XPath" Value ="//button[contains(text(),'$Val$')]"/>
+   <Locator name ="tabGeneric" Type ="XPath" Value ="//span[contains(text(),'$Val$')]"/>
+   <Locator name ="productGTIN" Type ="XPath" Value ="//p[contains(text(),'$Val$')]"/>
+   <Locator name ="optionCountry" Type ="XPath" Value ="//span[text()='$Val$']"/>
+   <Locator name ="selectUOM" Type ="XPath" Value ="//select"/>
+   <Locator name ="labelGTIN" Type ="XPath" Value ="//label[contains(text(),'GTIN')]//following-sibling::p"/>
+   <Locator name ="downloadBarcodePDF" Type ="XPath" Value ="//b[text()='PDF format']//parent::span//parent::div//parent::div//img"/>
+   <Locator name ="netContent" Type ="XPath" Value ="(//b[contains(text(),'Net content')]//parent::b//parent::span//parent::div//following-sibling::div//input)[1]"/>
+   <Locator name ="productCategory" Type ="XPath" Value ="//input[@type='search']"/>
+   <Locator name ="inputTextGeneric" Type ="XPath" Value ="//b[contains(text(),'$Val$')]//parent::b//parent::span//parent::div//parent::div//following-sibling::div//input"/>
+ </Page>
+ 
+ <Page name="HomePage">
+
+   <Locator name ="button" Type ="XPath" Value ="//input[@name='username']"/>
+   <Locator name ="AddUser" Type ="XPath" Value ="//a[text()=' + Add user ']"/>
+
+   <Locator name ="Header" Type ="XPath" Value ="//a[@class = 'active']//span"/>
+   <Locator name ="btnAddProduct" Type ="XPath" Value ="//b[contains(text(),'Add a new Product')]"/>
+   <Locator name ="Link_Admin" Type ="XPath" Value ="//a[contains(@class, 'router-link-exact-active active')]//span"/>
+   <Locator name ="Link_GeneralSettings" Type ="XPath" Value ="//a[contains(@href,  '#/general')]//span"/>
+   <Locator name ="Link_Companies" Type ="XPath" Value ="//a[contains(@href,'#/companies') and @class='darkgrayclass']//span"/>
+   <Locator name ="Link_Users" Type ="XPath" Value ="//a[contains(@href,'#/users') and @class='darkgrayclass']//span"/>
+   <Locator name ="Link_Licences" Type ="XPath" Value ="//a[contains(@href,'#/licences') and @class='darkgrayclass']//span"/>
+   <Locator name ="Link_Products" Type ="XPath" Value ="//a[contains(@href,'#/products') and @class='darkgrayclass']//span"/>
+   <Locator name ="Link_Content" Type ="XPath" Value ="//a[contains(@href,'#/content') and @class='darkgrayclass']//span"/>
+   <Locator name ="Link_GRPSync" Type ="XPath" Value ="//a[contains(@href,'#/grpsync') and @class='darkgrayclass']//span"/>
+   <Locator name ="Link_Help" Type ="XPath" Value ="//a[contains(@href,'#/help') and @class='darkgrayclass']//span"/>
+   <Locator name ="Link_ManageSuggestions" Type="XPath" Value='//*[@id="navbar-collapse-example"]/ul/li[2]/ul/li[2]/a'/> 
+   <Locator name ="Link_Viewallproducts" Type="XPath" Value='/html/body/div/div/div/div/div/div[2]/div[5]/div/div[2]/div/div/a'/> 	
+   <Locator name ="Link_MyAccount" Type="XPath" Value='//*[@id="navbar-languages"]'/>
+ </Page>
+ 
+
+ <Page name="AddUser">
+  	<Locator name ="firstName" Type ="XPath" Value ="//*[text()='First name']/parent::div/following::div/input"/>
+    <Locator name ="lastName" Type ="XPath" Value ="//*[text()='Last name']/parent::div/following::div/input"/>
+  	<Locator name ="emailAddress" Type ="XPath" Value ="//*[text()='Email address']/parent::div/following::div/input"/>
+  	<Locator name ="companyName" Type ="XPath" Value ="//*[text()='Company name']/parent::div/following::div/input"/>
+  	<Locator name ="companyNamedropdown" Type ="XPath" Value ="//span[text()=' abc limited ']"/>
+  	<Locator name ="saveButton" Type ="XPath" Value ="//button[text()='Save']"/>
+  	<Locator name ="popuptitle" Type ="XPath" Value ="//div[@class='v-card__title']"/>
+  	<Locator name ="viewExistingUser" Type ="XPath" Value ="//a[@class='ml-2']/small"/>
+  	<Locator name ="editUser" Type ="XPath" Value ="//div[@class='v-btn__content']"/>
+  	<Locator name ="clickongotodashboard" Type ="XPath" Value ="//a[@class='ml-4 v-btn v-btn--left v-btn--router theme--light']//div"/>
+  	<Locator name ="referencenumber" Type ="XPath" Value ="//*[text()='Reference number in your other systems']/parent::div/following::div/input"/>
+  	
+  	
+  	
+  	
+  		
+ </Page>
+ 
+ 
+
+ <Page name="ProductPage">
+   <Locator name ="vCard" Type ="XPath" Value ="//span[contains(text(),'$Val$')]"/>
+   <Locator name ="AddImageURL1" Type ="XPath" Value ="(//label[text()='Image url']//parent::div//following-sibling::div//input)[1]"/>
+   <Locator name ="AddImageURL2" Type ="XPath" Value ="(//label[text()='Image url']//parent::div//following-sibling::div//input)[2]"/>
+   <Locator name ="AddImageURL3" Type ="XPath" Value ="(//label[text()='Image url']//parent::div//following-sibling::div//input)[3]"/>
+   <Locator name ="AddImageURL4" Type ="XPath" Value ="(//label[text()='Image url']//parent::div//following-sibling::div//input)[4]"/>
+   <Locator name ="LanguageImageURL1" Type ="XPath" Value ="(//label[text()='Language']//parent::div//following-sibling::div//input)[2]"/>
+   <Locator name ="LanguageImageURL2" Type ="XPath" Value ="(//label[text()='Language']//parent::div//following-sibling::div//input)[3]"/>
+   <Locator name ="LanguageImageURL3" Type ="XPath" Value ="(//label[text()='Language']//parent::div//following-sibling::div//input)[4]"/>
+   <Locator name ="LanguageImageURL4" Type ="XPath" Value ="(//label[text()='Language']//parent::div//following-sibling::div//input)[5]"/>
+   <Locator name ="LanguageSelectGeneric" Type ="XPath" Value ="(//div[text()='$Val$'])[1]"/>
+   <Locator name ="ImageLangDropDown" Type ="XPath" Value ="(//label[text()='Language']//parent::div//following-sibling::div//input)"/>
+   
+   <Locator name ="LanguageScroll" Type ="XPath" Value ="//div[@class='v-menu__content theme--light menuable__content__active v-autocomplete__content']"/>
+   <Locator name ="UploadImage" Type ="XPath" Value ="//span//b[contains(text(),'Upload a file')]"/>
+   <Locator name ="UploadImage1" Type ="XPath" Value ="//input[contains(@title,'Select new image')=false and @accept='image/*']"/>
+   <Locator name ="SelectNewImage" Type ="XPath" Value ="//input[contains(@title,'Select new image')]"/>
+   <Locator name ="VerifyImage" Type ="XPath" Value ="(//div[contains(@style,'$Val$')])[1]"/>
+   <Locator name ="VerifyImage1" Type ="XPath" Value ="//img[@src='$Val$']"/>
+   <Locator name ="CreateBrandName" Type ="XPath" Value ="//button[contains(text(),' Create a new brand ')]"/>
+   <Locator name ="AddBrandNameButton" Type ="XPath" Value ="//span[@class='mt-4']/button[text()='Add']"/>
+   <Locator name ="finalize" Type ="XPath" Value ="//button[text()=' Finalise ']"/>
+   <Locator name ="brandname" Type ="XPath" Value ="//b[text()='$Val$']"/>
+   <Locator name ="CreateSubBrandName" Type ="XPath" Value ="//button[contains(text(),' Create a new sub brand ')]"/>
+   <Locator name ="AddSubBrandNameButton" Type ="XPath" Value ="//span[@class='mt-4']/button[text()='Add']"/>
+   <Locator name ="SubbrandText" Type ="XPath" Value ="//input[@placeholder='Another Sub brand']"/>
+     
+    
+  
+ </Page>
+ 
+  		<Page name ="SearchPage">
+ 			<Locator name ="searchfield" Type ="XPath"
+ 				Value ='//*[@id="example-search-input"]' />
+ 			<Locator name ="clickonresult" Type ="XPath"
+ 				Value ="//a[contains(text(),'$Val$')]" />	
+ 	
+ 		</Page>
+ 		
+ 		<Page name ="EditProduct">
+ 			<Locator name ="editproduct" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div/div[2]/div/div[2]/a"/>
+ 			<Locator name ="brandname" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div/div[9]/div/div/div[3]/div[1]/div[1]/div/span[2]/button"/>	
+ 				
+ 		</Page>
+  
+  <Page name="AddCompany">
+   <Locator name ="AddCompanyLink" Type ="XPath" Value ="//a[@href= '#/addcompany']"/>
+   <Locator name ="InputCompanyName" Type ="XPath" Value ="//span[contains(text(),'Company name')]//parent::div//following-sibling::div//div//input"/>
+   <Locator name ="InputCountry" Type ="XPath" Value ="//span[text()='Country']//parent::div//following-sibling::div//div//input"/>
+   <Locator name ="SelectItem" Type ="XPath" Value ="//span[contains(text(),'$Val$')]"/>
+   <Locator name ="SaveCompany" Type ="XPath" Value ="//button[@class = 'btn btn-primary pa-2 font14']"/>
+   <Locator name ="ErrorMessageDups" Type ="XPath" Value ="//div[@class = 'v-card__title']"/>
+   <Locator name ="ViewExistingLink" Type ="XPath" Value ="//div[@class = 'v-card__text text-left']//a//small"/>
+   <Locator name ="EditCompany" Type ="XPath" Value ="//div[@class = 'v-btn__content']"/>
+   <Locator name ="CompanyHeader" Type ="XPath" Value ="//span[@class = 'item-header']"/>
+   <Locator name ="ClickOnAdmin" Type ="XPath" Value ="//a[@class = 'active']"/>
+   <Locator name ="AddSuccess" Type ="XPath" Value ="//div[contains(text(), 'This company has been successfully added')]"/>
+   <Locator name ="AfterAddCompanyName" Type ="XPath" Value ="//div[@class = 'v-card__text text-left']//b"/>
+   <Locator name ="ViewCompanyDetails" Type ="XPath" Value ="//small[contains(text(), 'View company')]"/>   
+ </Page>
+
+ 
+ <Page name="Dashboard">
+    <Locator name ="submit1" Type ="XPath" Value ="/html/body/div[3]/div/div/div[2]/form/div[2]/input"/>
+ </Page>
+ <Page name="AddLicense">
+	 <Locator name ="AddLicenseLink" Type ="XPath" Value ="//a[@href= '#/addlicence']"/>
+	 <Locator name ="LicenseNo" Type ="XPath" Value ="//div[@class='inputbox']/input"/>
+	 <Locator name ="CompanyName" Type ="XPath" Value ="//input[@placeholder='Enter company name']"/>
+	 <Locator name ="SelectCompanyName" Type ="XPath" Value ="//span[text()='$Val$']"/>
+	 <Locator name ="LicenseStatus" Type ="XPath" Value ="//select[@class='selectbox']"/>
+	 <Locator name ="SaveLicense" Type ="XPath" Value ="//button[text()='Save']"/>
+	 <Locator name ="PopUpBtns" Type ="XPath" Value ="//button/div[text()='$Val$']"/>
+	 <Locator name ="PopUpMsg" Type ="XPath" Value ="//div[contains(text(),'$Val$')]"/>
+	 <Locator name ="PopUp" Type ="XPath" Value ="//div[@class='v-dialog v-dialog--active v-dialog--persistent']/div/div"/>
+ </Page>
+  <Page name="PageHeader">
+    <Locator name ="MyAccountClick" Type ="XPath" Value ="//a[contains(text(), 'My Account')]"/>
+    <Locator name ="ManageSuggestions" Type ="XPath" Value ="//a[contains(text(), 'Manage suggestions')]"/>
+    <Locator name ="Values_Subbrand" Type ="XPath" Value ="//b[contains(text(),'What are the most common sub-brand names of the products you sell?')]//parent::b//parent::p//following-sibling::div[@class = 'custom-list']//span//span//span//b[contains(text(),'$Val$')]"/>
+    <Locator name ="Values_brand" Type ="XPath" Value ="//b[contains(text(),'What are the most common brand names of the products you sell?')]//parent::b//parent::p//following-sibling::div[@class = 'custom-list']//span//span//span//b[contains(text(),'$Val$')]"/>
+    <Locator name ="HighlightGeneric" Type ="XPath" Value ="//b[contains(text(),'$Val$')]//parent::b//parent::span//parent::div//parent::div//parent::button[@class = 'text-none v-btn theme--dark']//div"/>
+    <Locator name ="ToHighlightGeneric" Type ="XPath" Value ="//b[contains(text(),'$Val$')]//parent::b//parent::span//parent::div//parent::div//button[2]"/>
+ </Page>
+ <Page name = "ProductAdd">
+    <Locator name ="ListofProducts" Type ="XPath" Value ="//table[@class = 'v-datatable v-table v-datatable--select-all theme--light']//tbody//tr"/>
+    <Locator name ="SelectProduct" Type ="XPath" Value ="(//tbody//input[@type = 'checkbox']//following-sibling::div)[$Val$]"/>
+    <Locator name ="EnterQtyofProduct" Type ="XPath" Value ="(//div[@class = 'row pa-1']//input)[$Val$]"/>
+    <Locator name ="EnterPackName" Type ="XPath" Value ="//b[contains(text(), 'Mixed Pack Name')]//parent::label//following-sibling::div//input"/>
+ </Page>  
+ <Page name="ManageSuggestions">
+    <Locator name ="Myaccount" Type ="XPath" Value ="//a[@id='navbar-languages']"/>
+    <Locator name ="ManageSuggestion" Type ="XPath" Value ="//a[@href='/user/#/managesuggestions']"/>
+    <Locator name ="Activatepage" Type ="XPath" Value ="//h2//b"/>
+    <Locator name ="SubBrand" Type ="XPath" Value ="//input[@aria-label='Enter frequent sub-brands']"/>
+    <Locator name ="Savebutton" Type ="XPath" Value ="//button[text()='Save']"/>
+    <Locator name ="Message" Type ="XPath" Value ="//div[@class='container']//h2"/>
+    <Locator name ="close" Type ="XPath" Value ="//span[@title='$Val$']/following::i]"/>
+    <Locator name ="save" Type ="XPath" Value ="//button[text()='Save']"/>
+    <Locator name ="ActivateButton" Type ="XPath" Value ="//button[text()='Start using Activate']"/>
+    <Locator name ="Brandname" Type ="XPath" Value ="//input[@aria-label='Enter most frequent brands']"/>
+        
+   <Locator name ="deleteproducttxt" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div[6]/div[2]/div/div/div[1]/div[1]/div/span[1]/span/span" />
+
+ 			<Locator name ="deleteproduct" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div[6]/div[2]/div/div/div[1]/div[1]/div/span[1]/span/i" />
+ 			
+ 			<Locator name ="savebutton" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div[6]/p[5]/button" />
+ 				<Locator name ="startusingactivate" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div[2]/div/div/div/a/button" />
+ 				<Locator name ="totalproducts" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div[6]/div[1]/span" />
+ 				     
+ 				
+				<Locator name ="clickonmore" Type ="XPath"
+ 				Value ="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[12]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[2]/i[1]" />
+ 				
+ 				<Locator name ="deletesubproducttxt" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div[6]/div[4]/div/div/div[1]/div[1]/div/span[1]/span/span" />
+ 			         
+ 				<Locator name ="deletesubproduct" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div[6]/div[4]/div/div/div[1]/div[1]/div/span[1]/span/i" />
+ 			
+ 				<Locator name ="totalsubproducts" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div[6]/div[3]/span" />
+ 				<Locator name ="clickonmoresubproducts" Type ="XPath"
+ 				Value ="/html/body/div/div/div/div/div/div[2]/div/div[12]/div[2]/div/div/div[1]/div/div/div/div[2]/div[1]/div/span[2]" />
+ 				<Locator name ="findspecificbrand" Type ="XPath"
+ 				Value ="//b[contains(text(),'$Val$')]" />
+ 				<Locator name ="deletespecificbrand" Type ="XPath"
+ 				Value ="//span[$Val$]//span[1]//i[1]" />
+ 				<Locator name ="findbrand" Type ="XPath"
+ 				Value ="//div[contains(text(),'$Val$')]" />
+ 				<Locator name ="findsubbrand" Type ="XPath"
+ 				Value ="//div[contains(text(),'$Val$')]" />  
+ 
+      
+ </Page>
+</Application>

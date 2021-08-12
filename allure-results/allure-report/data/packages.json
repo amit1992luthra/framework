@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "src.main.java.Features.ProductBarcode_feature.Generate Barcode",
+    "children" : [ {
+      "name" : "05_ 1.1 Add Products to Activate upload image",
+      "uid" : "b81d9b0e9ae4ccb2",
+      "parentUid" : "5ba0877156b81ce337091fa3a242c11a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1591714045097,
+        "stop" : 1591714162957,
+        "duration" : 117860
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "src.main.java.Features.ProductBarcode_feature.Generate Barcode"
+  } ]
+}
